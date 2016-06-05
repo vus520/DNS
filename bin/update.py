@@ -33,6 +33,9 @@ def update_rpz():
 		os.system('')	
 		os.system('mv /usr/local/named/var/rpz.zone /usr/local/named/var/rpz.zone.bak')
 		os.system('mv rpz.zone.new /usr/local/named/var/rpz.zone')
+		os.system('echo "*.lc              IN A 127.0.0.1" >> /usr/local/named/var/rpz.zone')
+                os.system('echo "*.local           IN A 127.0.0.1" >> /usr/local/named/var/rpz.zone')
+                os.system('echo "*.localdomain     IN A 127.0.0.1" >> /usr/local/named/var/rpz.zone')
 		os.system('sudo rndc reload')	
 		print('update have done,thanks!')
 
