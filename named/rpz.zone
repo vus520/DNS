@@ -59,10 +59,10 @@ ingress.com                                             IN A            72.14.24
 *.googleadservices.com					IN A		203.208.43.77
 
 
-*.gvt0.com						IN A		182.239.95.136
-*.gvt1.com						IN A		182.239.95.136
-*.gvt2.com						IN A		182.239.95.136
-*.gvt3.com						IN A		182.239.95.136
+*.gvt0.com						IN A		74.125.102.121
+*.gvt1.com						IN A		74.125.102.121
+*.gvt2.com						IN A		74.125.102.121
+*.gvt3.com						IN A		74.125.102.121
 
 ;youtube
 youtu.be						IN A		182.239.95.136
