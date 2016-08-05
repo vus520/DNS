@@ -221,14 +221,14 @@ www.xda-developers.com 					IN A 		207.244.73.44
 xda-developers.com 					IN A 		207.244.73.44
 
 ;github
-gist.github.com						IN A		192.30.252.141
+gist.github.com						IN A		192.30.253.112
 github.com						IN A		192.30.253.112
 www.github.com 						IN A		192.30.253.112
-nodeload.github.com					IN A		192.30.253.120
-raw.github.com						IN A		151.101.40.133
-documentcloud.github.com				IN A		151.101.40.133
-developer.github.com					IN A		151.101.24.133
-api.github.com						IN A		192.30.253.116
+nodeload.github.com					IN A		192.30.253.112
+raw.github.com						IN A		192.30.253.112
+documentcloud.github.com				IN A		192.30.253.112
+developer.github.com					IN A		192.30.253.112
+api.github.com						IN A		192.30.253.112
 
 ;Box.com
 app.box.com						IN A            74.112.184.70
