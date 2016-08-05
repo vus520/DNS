@@ -7,10 +7,19 @@ $TTL 1D
 									1D )		; minimum
 
 @	IN	NS	ns1.pandadns.com.
-;identity authentication
-id.pandadns						IN CNAME	from.github.pandadns.
-*.id.pandadns						IN CNAME	from.github.pandadns.
-from.github.pandadns					IN A		52.94.41.38
+
+
+
+;telegram
+telegram.org 						IN A 149.154.167.99
+www.telegram.org 					IN A 149.154.167.99
+desktop.telegram.org 					IN A 149.154.167.99
+core.telegram.org 					IN A 149.154.167.99
+updates.tdesktop.com 					IN A 149.154.167.80
+web.telegram.org 					IN A 149.154.167.120
+flora.web.telegram.org 					IN A 149.154.171.22
+telegram.me 						IN A 149.154.167.118
+www.telegram.m					 	IN A 149.154.167.118
 
 ;vimeo.com
 vimeo.com						IN A		104.156.85.217
@@ -50,10 +59,10 @@ ingress.com                                             IN A            72.14.24
 *.googleadservices.com					IN A		203.208.43.77
 
 
-*.gvt0.com						IN A		220.255.2.153
-*.gvt1.com						IN A		220.255.2.153
-*.gvt2.com						IN A		220.255.2.153
-*.gvt3.com						IN A		220.255.2.153
+*.gvt0.com						IN A		182.239.95.136
+*.gvt1.com						IN A		182.239.95.136
+*.gvt2.com						IN A		182.239.95.136
+*.gvt3.com						IN A		182.239.95.136
 
 ;youtube
 youtu.be						IN A		182.239.95.136
@@ -66,7 +75,7 @@ youtube.com						IN A		182.239.95.136
 
 ;gstaticStart
 fonts.gstatic.com					IN A		203.208.43.88
-*.ggpht.com						IN A		220.255.2.153
+*.ggpht.com						IN A		182.239.95.136
 *.gstatic.com						IN A		220.255.2.153
 
 ;GoogleapisStart
@@ -74,7 +83,6 @@ goo.gl							IN A		182.239.127.137
 g.co							IN A		182.239.127.137
 app.simplenote.com					IN A		72.14.246.169
 *.googleapis.com					IN A		220.255.2.153
-*.googlehosted.com					IN A		220.255.2.153
 *.2mdn.net						IN A		220.255.2.153
 *.urchin.com						IN A		220.255.2.153
 *.feedburner.com					IN A		220.255.2.153
@@ -94,7 +102,7 @@ google.cn						IN A		203.208.43.114
 fb.me							IN A 		173.252.81.7
 messages-facebook.com					IN A		173.252.81.7
 facebook.net						IN A		173.252.81.7
-facebook.com						IN A		173.252.81.7	
+facebook.com						IN A		173.252.81.7
 fbcdn.net						IN A		31.13.66.9
 scontent.xx.fbcdn.net					IN A		31.13.69.203
 video.xx.fbcdn.net					IN A		31.13.95.14
@@ -142,32 +150,32 @@ promoted.soundcloud.com					IN A		68.232.44.127
 visuals.soundcloud.com					IN A		68.232.44.127
 
 ;twitter
-twitter.com						IN A		104.244.42.1 
-www.twitter.com						IN A		104.244.42.1 
-api.twitter.com						IN A		104.244.42.2 
-mobile.twitter.com					IN A		104.244.42.6 
-support.twitter.com					IN A		104.244.42.7 
-upload.twitter.com					IN A		104.244.42.11 
-tweetdeck.twitter.com					IN A		104.244.42.132 
-tweetdeck.com						IN A		104.244.42.132 
-syndication.twitter.com					IN A		104.244.42.136 
-syndication-o.twitter.com				IN A		104.244.42.136 
-cdn.syndication.twimg.com				IN A		104.244.42.136 
-cdn.syndication.twitter.com				IN A		104.244.42.136 
-cdn.api.twitter.com					IN A		104.244.42.2 
-preview.cdn.twitter.com					IN A		104.244.42.1 
-t.co							IN A		104.244.42.197 
-twitpic.com						IN A		173.236.110.98 
-tinypic.com						IN A		209.17.68.209 
-twimg.com						IN A		104.244.43.199 
+twitter.com						IN A		104.244.42.1
+www.twitter.com						IN A		104.244.42.1
+api.twitter.com						IN A		104.244.42.2
+mobile.twitter.com					IN A		104.244.42.6
+support.twitter.com					IN A		104.244.42.7
+upload.twitter.com					IN A		104.244.42.11
+tweetdeck.twitter.com					IN A		104.244.42.132
+tweetdeck.com						IN A		104.244.42.132
+syndication.twitter.com					IN A		104.244.42.136
+syndication-o.twitter.com				IN A		104.244.42.136
+cdn.syndication.twimg.com				IN A		104.244.42.136
+cdn.syndication.twitter.com				IN A		104.244.42.136
+cdn.api.twitter.com					IN A		104.244.42.2
+preview.cdn.twitter.com					IN A		104.244.42.1
+t.co							IN A		104.244.42.197
+twitpic.com						IN A		173.236.110.98
+tinypic.com						IN A		209.17.68.209
+twimg.com						IN A		104.244.43.199
 
 video.twimg.com						IN A		104.244.43.199
-*.twimg.com						IN A		104.244.43.199 
-*.tinypic.com						IN A		209.17.68.209 
-*.twitpic.com						IN A		173.236.110.98 
-*.t.co							IN A		104.244.42.69 
-*.tweetdeck.com						IN A		104.244.42.132 
-*.twitter.com						IN A		104.244.42.3 
+*.twimg.com						IN A		104.244.43.199
+*.tinypic.com						IN A		209.17.68.209
+*.twitpic.com						IN A		173.236.110.98
+*.t.co							IN A		104.244.42.69
+*.tweetdeck.com						IN A		104.244.42.132
+*.twitter.com						IN A		104.244.42.3
 
 ;wikipedia
 wikipedia.org						IN A		198.35.26.96
@@ -214,20 +222,20 @@ xda-developers.com 					IN A 		207.244.73.44
 
 ;github
 gist.github.com						IN A		192.30.252.141
-github.com						IN A		192.30.252.131
-www.github.com 						IN A		192.30.252.131
-nodeload.github.com					IN A		192.30.252.144
-raw.github.com						IN A		103.245.222.133
-documentcloud.github.com				IN A		103.245.222.133
-developer.github.com					IN A		103.245.222.133
-api.github.com						IN A		192.30.252.126
+github.com						IN A		192.30.253.112
+www.github.com 						IN A		192.30.253.112
+nodeload.github.com					IN A		192.30.253.120
+raw.github.com						IN A		151.101.40.133
+documentcloud.github.com				IN A		151.101.40.133
+developer.github.com					IN A		151.101.24.133
+api.github.com						IN A		192.30.253.116
 
 ;Box.com
 app.box.com						IN A            74.112.184.70
 box.com                                                 IN A            74.112.184.90
 m.box.com 	                                        IN A            74.112.184.85
 support.box.com                                         IN A            104.218.203.34
-www.box.com                                             IN A            74.112.184.85	
+www.box.com                                             IN A            74.112.184.85
 www.box.net                                             IN A            74.112.184.80
 
 play.itunes.apple.com					IN A            118.215.176.66
@@ -240,7 +248,7 @@ init.itunes.apple.com					IN A		118.215.176.66
 itunes.apple.com					IN A		118.215.176.66
 
 search.itunes.apple.com					IN A		118.215.176.66
-		
+
 radio.itunes.apple.com					IN A		23.42.69.185
 radio-services.itunes.apple.com				IN A		23.42.69.185
 radio-activity.itunes.apple.com				IN A		23.42.69.185
@@ -306,7 +314,7 @@ steamcommunity-a.akamaihd.net				IN A		61.213.168.19
 origin-a.akamaihd.net					IN A		58.240.53.194
 
 ;mega
-mega.nz							IN A		154.53.224.166					
+mega.nz							IN A		154.53.224.166
 g.cdn1.mega.co.nz					IN A		117.18.237.188
 
 ;Amazon AWS
@@ -615,4 +623,3 @@ www.flickr.com						IN A		183.177.81.75
 *.google.vg						IN A		220.255.2.153
 *.google.vu						IN A		220.255.2.153
 *.google.ws						IN A		220.255.2.153
-

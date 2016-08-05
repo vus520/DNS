@@ -32,7 +32,7 @@ echo '|make install bind9.3.4 ...........................|' ;
 echo '|--------------------------------------------------|' ;
 make && make install;
 
-echo '|-------------------Final treatment----------------|' ;
+echo '|-------------------Final setup--------------------|' ;
 setenforce 0;
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config;
 

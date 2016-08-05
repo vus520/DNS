@@ -1,20 +1,21 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*
-#/etc/rc.d/init.d/named
+# /etc/rc.d/init.d/named
 # @zyqf
 # email:qq767026763@gmail.com
-named ='''
+
+named = '''
 #！/bin/bash
 # vim /etc/rc.d/init.d/named
 # chkconfig: 2345 70 50
 # description: named
- 
+
 [ -r /etc/rc.d/init.d/functions ] && . /etc/rc.d/init.d/functions
- 
+
 PidFile=/usr/local/named/var/named.pid
 LockFile=/var/lock/subsys/named
 named=named
- 
+
 start() {
     [ -x /usr/local/named/sbin/$named ] || exit 4
     if [ -f $LockFile ]; then
@@ -23,7 +24,7 @@ start() {
         echo
         exit 5
     fi
-     
+
     echo -n "Starting $named: "
     daemon --pidfile "$PidFile" /usr/local/named/sbin/$named -u named -4
     RETVAL=$?
@@ -36,13 +37,13 @@ start() {
         return 1
     fi
 }
- 
+
 stop() {
     if [ ! -f $LockFile ];then
         echo "$named is not started."
         failure
     fi
- 
+
     echo -n "Stopping $named: "
     killproc $named
     RETVAL=$?
@@ -50,13 +51,13 @@ stop() {
     [ $RETVAL -eq 0 ] && rm -f $LockFile
     return 0
 }
- 
+
 restart() {
     stop
     sleep 1
     start
 }
- 
+
 reload() {
     echo -n "Reloading $named: "
     killproc $named -HUP
@@ -64,20 +65,20 @@ reload() {
     echo
     return $RETVAL
 }
- 
+
 status() {
     if pidof $named > /dev/null && [ -f $PidFile ]; then
         echo "$named is running..."
-		/usr/local/named/sbin/rndc status
+        /usr/local/named/sbin/rndc status
     else
         echo "$named is stopped..."
     fi
 }
- 
+
 case $1 in
 start)
     start ;;
-stop) 
+stop)
     stop ;;
 restart)
     restart ;;
@@ -90,8 +91,7 @@ status)
     exit 2;;
 esac
 '''
-f=open('/etc/rc.d/init.d/named','a')
-f.write(str(named))
-f.close()
+with open('/etc/rc.d/init.d/named', 'a') as f:
+    f.write(str(named))
 
-print "\n it's have done !"
+print "\n it has been done now!"
